@@ -38,8 +38,8 @@ public class student_register_servlet extends HttpServlet {
 		String mobileNumber = request.getParameter("r3");
 		String institutionId = request.getParameter("r4");
 		String password = request.getParameter("r5");
-		ps.setString(1, studentName);
-		ps.setString(2, studentId);
+		ps.setString(1, studentId);
+		ps.setString(2, studentName);
 		ps.setString(3, mobileNumber);
 		ps.setString(4, institutionId);
 		ps.setString(5, password);

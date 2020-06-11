@@ -50,11 +50,11 @@ public class student_login_servlet extends HttpServlet {
 
 		      if(rs.next())
 		      {
-		      out.println("<h1>Login success</h1>");
+		    	  response.sendRedirect("dashboard.html");
 		      }
 		      else
 		      {
-		        out.println("<h1>Invalid Credentials</h1>");
+		        out.println("<h1>Invalid Credentials Login Again</h1>");
 		      }
 		    }
 		    catch(Exception e) {
